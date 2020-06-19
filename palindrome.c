@@ -10,7 +10,7 @@ int main()
     if(rev==n);
         printf("The given number %d is a palindrome\n",n);
     else
-        printf("The given number %d is not a palindrome\n");
+        printf("The given number %d is not a palindrome\n",n);
     return 0;
 }
 int reverse(int n)
