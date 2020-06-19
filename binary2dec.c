@@ -11,10 +11,10 @@ int main()
 }
 int dec2bin(long long n)
 {
-    int dec=0,rem=0,i=0;//initializing bin and rem to 0 to avoid any garbage value to get added and i to 1 so that when multiplied in step 18
+    int dec=0,i=0;//initializing bin and rem to 0 to avoid any garbage value to get added and i to 1 so that when multiplied in step 18
     while(n!=0)         //doesn't give 0..........keep the loop till n becomes 0 after repeated division
     {
-        rem=n%10;        //using simple method of DCD checking remainder if 0 or 1 and that is the binary equivalent
+        int rem=n%10;        //using simple method of DCD checking remainder if 0 or 1 and that is the binary equivalent
         n=n/10;          //reducing the number to get to next digit like from units->hundreds->thousands
         dec=dec+rem*pow(2,i);  //adding and shifting to get required binary number
         i++;         //multiplying i to change its position weight
