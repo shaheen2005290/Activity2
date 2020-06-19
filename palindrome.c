@@ -15,9 +15,10 @@ int main()
 }
 int reverse(int n)
 {
-    int val,base=1,real=0;
+    int base=1,real=0;
     while(n!=0)
     {
+        int val;
         val=n%10;
         real=real*base*10+val;
         n=n/10;
